@@ -14,7 +14,7 @@ export default function ReportLost() {
 
   const [success, setSuccess] = useState(false);
 
-  // Handle input changes
+  
   const handleChange = (e) => {
     const { name, value, files } = e.target;
 
@@ -24,11 +24,11 @@ export default function ReportLost() {
     });
   };
 
-  // Handle submit
+  
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Simple validation
+    
     if (
       !formData.item ||
       !formData.description ||
@@ -48,7 +48,7 @@ export default function ReportLost() {
 
     setSuccess(true);
 
-    // Clear form after submit
+    
     setFormData({
       item: "",
       description: "",
@@ -137,7 +137,7 @@ export default function ReportLost() {
         <button type="submit" className="btn submit-btn">Submit Report</button>
       </form>
 
-      {/* Success Popup */}
+      
       {success && (
         <div className="popup">
           <div className="popup-box">

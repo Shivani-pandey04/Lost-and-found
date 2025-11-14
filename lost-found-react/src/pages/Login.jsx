@@ -22,7 +22,7 @@ export default function Login() {
       return;
     }
 
-    // SUCCESS POPUP
+    
     setSuccess(true);
     setEmail("");
     setPassword("");
@@ -62,7 +62,7 @@ export default function Login() {
           </span>
         </div>
 
-        {/* Error message */}
+        
         {error && <p className="error-text">{error}</p>}
 
         <button className="btn login-btn" type="submit">
@@ -74,7 +74,7 @@ export default function Login() {
         </p>
       </form>
 
-      {/* Success Popup */}
+      
       {success && (
         <div className="popup">
           <div className="popup-box">

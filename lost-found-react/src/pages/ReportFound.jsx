@@ -14,7 +14,7 @@ export default function ReportFound() {
 
   const [success, setSuccess] = useState(false);
 
-  // Handle input changes
+  
   const handleChange = (e) => {
     const { name, value, files } = e.target;
 
@@ -24,11 +24,11 @@ export default function ReportFound() {
     });
   };
 
-  // Form submit handler
+    
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validation
+    
     if (
       !formData.item ||
       !formData.description ||
@@ -46,10 +46,10 @@ export default function ReportFound() {
       return;
     }
 
-    // Show success popup
+    
     setSuccess(true);
 
-    // Clear form
+    
     setFormData({
       item: "",
       description: "",
